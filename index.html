@@ -3,79 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relevant Wine — Godot Game Developer</title>
+    <title>Relevant Games</title>
+    <meta name="description" content="Small Android games made by one person in Godot: Bendy Fenders, Satisfying Circles Deluxe and Sliding Penguins.">
+    <meta name="theme-color" content="#0d1321">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://relevantgames.fr/">
+    <meta property="og:title" content="Relevant Games">
+    <meta property="og:description" content="Small Android games made by one person in Godot. Football with cars, rings that crush you, penguins that won't stop sliding.">
+    <meta property="og:image" content="https://relevantgames.fr/img/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d1321'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23ff6b35'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Barlow+Condensed:ital,wght@0,600;0,700;1,800;1,900&family=Comfortaa:wght@500;700&family=Silkscreen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        <div class="nav-inner">
-            <a href="/" class="logo">Relevant Wine</a>
-            <div class="nav-links">
-                <a href="#games">Games</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-            </div>
-        </div>
-    </nav>
+<body class="home">
+    <a class="skip" href="#games">Skip to the games</a>
 
-    <header class="hero">
-        <h1 class="hero-title">Relevant Wine</h1>
-        <p class="tagline">Indie game studio crafting playful experiences with Godot Engine</p>
-        <div class="hero-badge">Available on Android</div>
+    <header class="bar">
+        <a href="/" class="bar-mark" aria-label="Relevant Games, home">RELEVANT<i></i></a>
+        <nav class="bar-links" aria-label="Main">
+            <a href="#games">Games</a>
+            <a href="#rules">Rules</a>
+            <a href="#contact">Contact</a>
+            <a href="privacy-policy.html">Privacy</a>
+        </nav>
     </header>
 
     <main>
-        <section id="about" class="section">
-            <h2>About</h2>
-            <p class="section-text">Relevant Wine is a solo indie studio building games with the <strong>Godot Engine</strong>. We focus on simple, polished mobile experiences — games you can pick up in a minute and keep coming back to.</p>
+        <section class="mast">
+            <h1 class="logo" aria-label="Relevant Games">
+                <span class="logo-word" aria-hidden="true"><span style="--i:7">R</span><span style="--i:6">E</span><span style="--i:5">L</span><span style="--i:4">E</span><span style="--i:3">V</span><span style="--i:2">A</span><span style="--i:1">N</span><span style="--i:0">T</span><b class="logo-ball"></b></span>
+                <span class="logo-sub" aria-hidden="true"><span>Games</span></span>
+            </h1>
+
+            <div class="mast-text">
+                <p class="mast-lede">I make small games for Android phones, alone, in the Godot engine.</p>
+                <p>The rule: you get it in a minute, and you're still playing an hour later. Three are out so far. One has cars playing football, one has rings that want to crush you, and one has penguins who can't stop sliding.</p>
+            </div>
+
+            <ol class="shelf" aria-label="The games">
+                <li><a href="#bendy-fenders"><img src="img/icon-bendy.webp" alt="" width="64" height="64"><span><b>Bendy Fenders</b>Car football · new</span></a></li>
+                <li><a href="#satisfying-circles"><img src="img/icon-circles.webp" alt="" width="64" height="64"><span><b>Satisfying Circles Deluxe</b>One-tap arcade</span></a></li>
+                <li><a href="#sliding-penguins"><img src="img/icon-penguins.webp" alt="" width="64" height="64" class="pixel"><span><b>Sliding Penguins</b>Ice puzzles</span></a></li>
+            </ol>
         </section>
 
-        <hr class="divider">
+        <div class="ticker" aria-hidden="true">
+            <span class="ticker-tag">Live</span>
+            <div class="ticker-track">
+                <p>Bendy Fenders is out on Google Play <i></i> Drive. Bump. Question everything. <i></i> Off the post! Physics remains undefeated. <i></i> Escape before they crush you <i></i> The penguins are still stuck in jail <i></i> Two spinners. Twice the spin, same sad salary. <i></i></p>
+                <p>Bendy Fenders is out on Google Play <i></i> Drive. Bump. Question everything. <i></i> Off the post! Physics remains undefeated. <i></i> Escape before they crush you <i></i> The penguins are still stuck in jail <i></i> Two spinners. Twice the spin, same sad salary. <i></i></p>
+            </div>
+        </div>
 
-        <section id="games" class="section">
-            <h2>Games</h2>
-            <div class="game-card">
-                <div class="game-info">
-                    <h3>Sliding Penguins</h3>
-                    <span class="game-tag">Puzzle</span>
-                    <p>Guide adorable penguins across icy levels by sliding them in four directions. Each penguin slides until it hits a wall or another penguin — plan your moves carefully to get everyone to their goal.</p>
-                    <div class="game-features">
-                        <div class="feature">
-                            <strong>Casual &amp; challenging</strong>
-                            <span>Easy to learn, increasingly tricky levels</span>
-                        </div>
-                        <div class="feature">
-                            <strong>Free to play</strong>
-                            <span>Jump right in with no barriers</span>
-                        </div>
-                        <div class="feature">
-                            <strong>Offline ready</strong>
-                            <span>Play anywhere, no connection needed</span>
+        <div id="games">
+
+        <!-- ============ BENDY FENDERS ============ -->
+        <section id="bendy-fenders" class="game bendy" aria-labelledby="bendy-title">
+            <div class="bendy-slab">
+                <div class="bendy-slab-inner">
+                    <p class="kicker">01 &middot; Matchday &middot; Cars vs robots</p>
+                    <h2 id="bendy-title" class="bendy-title">Bendy<br>Fenders</h2>
+                    <p class="bendy-new">New &middot; Nov 2026</p>
+                </div>
+            </div>
+
+            <div class="game-body">
+                <div class="game-copy">
+                    <p class="pitch">Football, but everyone's a car. The ball plays like pool: hit it dead centre and it flies straight, clip it off-centre and it cuts away. Every goal is a shot you lined up.</p>
+                    <p>You drive with one finger. Put it down anywhere and drag, and the car goes that way. A second finger boosts. Let go to brake.</p>
+
+                    <ul class="league">
+                        <li><span class="league-n">01</span><b>Story</b><span>50 puzzle levels in five chapters, best time on each</span></li>
+                        <li><span class="league-n">02</span><b>Match</b><span>1&nbsp;vs&nbsp;1, 2&nbsp;vs&nbsp;2 or 1&nbsp;vs&nbsp;2 against robots, golden goal on a draw</span></li>
+                        <li><span class="league-n">03</span><b>Garage</b><span>Ten paint jobs, paid for with coins you win</span></li>
+                    </ul>
+
+                    <a class="play-btn bendy-btn" href="https://play.google.com/store/apps/details?id=com.relevantwine.bendyfenders" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.396 12l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z"/></svg>
+                        <span>Get it on Google Play</span>
+                    </a>
+                </div>
+
+                <div class="shots bendy-shots">
+                    <figure><img src="img/bendy-match.webp" alt="A 2 vs 2 match: the player's orange car and a yellow partner against two purple robot cars on a green pitch" width="480" height="853" loading="lazy"></figure>
+                    <figure><img src="img/bendy-level27.webp" alt="Level 27, Double Spinner, with the hint: Two spinners. Twice the spin, same sad salary." width="480" height="853" loading="lazy"></figure>
+                </div>
+            </div>
+
+            <blockquote class="commentary">
+                <p>&ldquo;Big hit! The ball's insurance won't cover that.&rdquo;</p>
+                <cite>The stadium commentator, who has opinions</cite>
+            </blockquote>
+        </section>
+
+        <!-- ============ SATISFYING CIRCLES DELUXE ============ -->
+        <section id="satisfying-circles" class="game circles" aria-labelledby="circles-title">
+            <div class="game-body">
+                <div class="game-copy">
+                    <p class="kicker">02 &middot; Arcade &middot; One tap</p>
+                    <h2 id="circles-title" class="circles-title">Satisfying Circles <span>Deluxe</span></h2>
+                    <p class="pitch">A ball bounces inside rings that spin and shrink. Get the gap under the ball before the ring closes in on it.</p>
+                    <p>Tap the left side to push the inner ring forward, the right side to send it back. Every ring you clear brings a new one on the outside, and everything gets a little faster.</p>
+
+                    <ul class="glow-list">
+                        <li>Four looks: Classic, Monochrome, Pastel, Neon</li>
+                        <li>Ball skins, bought with coins from your runs</li>
+                        <li>Five to ten rings, you pick the pressure</li>
+                        <li>One revive per run, if you want to watch an ad for it</li>
+                    </ul>
+
+                    <a class="play-btn circles-btn" href="https://play.google.com/store/apps/details?id=com.relevantwine.satisfyingcirclesdeluxe" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.396 12l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z"/></svg>
+                        <span>Get it on Google Play</span>
+                    </a>
+                </div>
+
+                <figure class="toy">
+                    <div class="toy-stage">
+                        <svg class="toy-svg" viewBox="-100 -100 200 200" role="img" aria-label="Spinning rings, each with a gap, around a small ball">
+                            <g id="toy-rings"></g>
+                            <circle id="toy-ball" r="4" cx="0" cy="0" fill="#fff"/>
+                        </svg>
+                        <button type="button" class="toy-half toy-left" data-dir="1" aria-label="Hold to spin the inner ring forward"></button>
+                        <button type="button" class="toy-half toy-right" data-dir="-1" aria-label="Hold to spin the inner ring backward"></button>
+                    </div>
+                    <figcaption>Hold the left or right side. That's the whole control scheme.</figcaption>
+                </figure>
+            </div>
+
+            <div class="shots circles-shots">
+                <figure><img src="img/circles-neon.webp" alt="Neon style: five glowing rings in orange, pink, green and cyan around the ball" width="480" height="853" loading="lazy"></figure>
+                <figure><img src="img/circles-mono.webp" alt="Monochrome style: grey rings with a small gold ball" width="480" height="853" loading="lazy"></figure>
+                <figure><img src="img/circles-menu.webp" alt="Title screen: CIRCLES, escape before they crush you, best score 46" width="480" height="853" loading="lazy"></figure>
+            </div>
+        </section>
+
+        <!-- ============ SLIDING PENGUINS ============ -->
+        <section id="sliding-penguins" class="game penguins" aria-labelledby="penguins-title">
+            <div class="game-body">
+                <div class="game-copy">
+                    <p class="kicker">03 &middot; Puzzle &middot; Pixel art</p>
+                    <h2 id="penguins-title" class="penguins-title">Sliding Penguins</h2>
+                    <p class="pitch">Penguins on ice don't stop where you'd like them to.</p>
+                    <p>Swipe, and every penguin slides until it hits a wall or another penguin. Plan the order, use each other as brakes, and get them where they need to go. It starts gentle and gets tricky.</p>
+
+                    <div class="dialog">
+                        <img src="img/icon-penguins.webp" alt="" width="56" height="56" class="pixel">
+                        <div>
+                            <b>Master Penguin</b>
+                            <p>You need to help your brothers, they are stuck in jails.</p>
                         </div>
                     </div>
-                    <a href="https://play.google.com/store/apps/details?id=org.relevantwine.slidingpenguins" class="btn" target="_blank" rel="noopener">
-                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.396 12l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z"/></svg>
-                        Get it on Google Play
+
+                    <a class="play-btn penguins-btn" href="https://play.google.com/store/apps/details?id=org.relevantwine.slidingpenguins" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.396 12l2.302-2.492zM5.864 2.658L16.8 9.99l-2.302 2.302L5.864 2.658z"/></svg>
+                        <span>Get it on Google Play</span>
                     </a>
+                </div>
+
+                <div class="shots penguins-shots">
+                    <figure><img src="img/penguins-sliding.webp" alt="Tutorial 4: two penguins at the bottom of an icy level, a jailed penguin above" width="480" height="960" loading="lazy"></figure>
+                    <figure><img src="img/penguins-menu.webp" alt="Title screen in pixel letters: Sliding Penguins, Play, Levels, Options, Credits" width="480" height="960" loading="lazy"></figure>
                 </div>
             </div>
         </section>
 
-        <hr class="divider">
+        </div>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p class="section-text">Got feedback or just want to say hi? Reach out at <a href="mailto:contact.relevantwine@proton.me">contact.relevantwine@proton.me</a></p>
+        <!-- ============ RULES ============ -->
+        <section id="rules" class="rules" aria-labelledby="rules-title">
+            <h2 id="rules-title">House rules</h2>
+            <p class="rules-intro">What every game here has to pass before it ships.</p>
+            <ol>
+                <li><b>You get it in a minute.</b> If it needs a manual, it isn't done.</li>
+                <li><b>It plays offline.</b> On the bus, in the tunnel, on the plane. No account to make.</li>
+                <li><b>Your progress stays on your phone.</b> No servers of mine are keeping it.</li>
+                <li><b>Coins come from playing.</b> In Bendy Fenders and Circles, there's nothing to buy with real money.</li>
+                <li><b>Ads stay out of the way of play.</b> They keep the games free. They never pop up in the middle of a shot.</li>
+            </ol>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Stuck on level 27? Found a bug? Got an idea?</h2>
+            <p>Write to me. I read everything, and I answer.</p>
+            <a class="contact-mail" href="mailto:contact.relevantwine@proton.me">contact.relevantwine@proton.me</a>
+            <p class="contact-note">On Google Play you'll find the games under <a href="https://play.google.com/store/apps/dev?id=6706162466563044936" target="_blank" rel="noopener">RelevantWine</a>, the studio's old name.</p>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-inner">
-            <p>&copy; 2026 Relevant Wine. All rights reserved.</p>
-            <a href="privacy-policy.html">Privacy Policy</a>
-        </div>
+    <footer class="foot">
+        <p>&copy; 2026 Relevant Games &middot; Made in Godot</p>
+        <a href="privacy-policy.html">Privacy policy</a>
     </footer>
+
+    <script src="circles.js" defer></script>
 </body>
 </html>
